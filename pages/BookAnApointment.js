@@ -22,8 +22,12 @@ const BookAnApointment = () => {
                             Sun - Fri (3:00 PM - 9:00 PM) <br />
                             Sat (Weekly Off) <br /> */}
                             <h5>Dr. Sanjay Yadav</h5>
-                            Sun - Fri (10:00 AM - 1:00 PM) <br />
-                            Sat (Weekly Off) <br /><br />
+                            Timing : 10am to 3pm
+                            <br />
+                            &#160;&#160;&#160;&#160;
+                            &#160;&#160;&#160;&#160;
+                            &#160;&#160;&#160;
+                            5pm to 8 pm <br /><br />
                         </div>
                         <div className="col-lg-3"></div>
                         <div className="row">
@@ -43,18 +47,20 @@ const BookAnApointment = () => {
                                     <div>
                                         <strong>Patient Mobile :&#160;&#160;</strong>
                                         <input name="mobile" required="" type="text" id="mobile" s
-                                        ize="10" maxlength="10" pattern="[0-9]{10}" />
+                                            ize="10" maxlength="10" pattern="[0-9]{10}" />
                                     </div>
                                     <div>
                                         <strong>Patient Gender : &#160;&#160;</strong>
+                                        <br/>
                                         <input name="gender" required="" type="radio" id="gender" value="Male" /><label for="Male">Male</label>
                                         &#160;  <input name="gender" required="" type="radio" id="gender"
-                                         value="Female" /><label for="Female">Female</label>
-                                        &#160; <input name="gender" required="" type="radio" id="gender"
-                                         value="Others" /><label for="Others">Others</label>
+                                            value="Female" /><label for="Female">Female</label>
+                                        &#160;
+                                        {/* <input name="gender" required="" type="radio" id="gender"
+                                         value="Others" /><label for="Others">Others</label> */}
                                     </div>
 
-                                    <div>
+                                    <div style={{marginTop:"10px"}}>
                                         <strong>Patient Age (in Years) :&#160;&#160;</strong>
                                         <input name="age" required="" type="number" id="age" size="10" maxlength="3" min="1" max="130" />
                                     </div>
@@ -65,23 +71,22 @@ const BookAnApointment = () => {
                                         <input name="city" required="" type="text" id="city" />
 
                                     </div>
-                                    <div>
-                                        <strong>Appointment with Doctor : &#160; &#160;</strong>
+                                    <div style={{marginTop:"10px"}}>
+                                        <strong  >Appointment with Doctor : &#160; &#160;</strong>
 
                                         <select name="doctor" required="" id="doctor">
                                             <option value="">Select Doctor</option>
                                             <option value="1">Dr. Sanjay Yadav</option>
-                                            {/* <option value="2">Dr.Demo2</option> */}
                                         </select>
                                     </div>
 
-                                    <div>
+                                    <div style={{marginTop:"10px"}}> 
                                         <strong>Appointment Date : </strong>
                                         <select name="appdate" required="" id="appdate">
                                             <option value="">Select Doctor First</option>
                                         </select>
                                     </div>
-                                    <div>
+                                    <div style={{marginTop:"10px"}}>
                                         <strong>Appointment Time: </strong>
                                         <select name="apptime" required="" id="apptime">
                                             <option value="">Select Date First</option>

@@ -10,21 +10,23 @@ const Header = () => {
                 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
             </div>
-            <div className="row pt-4">
+            {/* <div style={{float:"right"}}>Registration number-57393</div> */}
+            <div className="row ">
                 <div className="  col-lg-3 col-md-8 col-sm-8 col-9 logo_img"
                     style={{ textAlign: "center" }}>
                     <Link href="#">
                         <a>
-                            <img src="/images/logo3.jpeg" style={{ width: "70%", height: "70%" }} />
+                            <img src="/images/logo4.jpeg" style={{ width: "70%", height: "80%" }} />
 
                         </a>
                     </Link>
                 </div>
                 <div className="pt-1 col-lg-9 col-md-12 col-sm-4 col-12 nav_main_menu ">
-                    <div className="bg-dark nav_main_menu0">
-                        <nav className=" navbar navbar-expand-md navbar-light bg-light justify-content-center nav_main_menu1"
-                        // style={{ backgroundColor: "transparent !important" }}
-                        >
+                    <div className="bg-dark nav_main_menu0"> 
+                        <nav className=" navbar navbar-expand-md navbar-light bg-light
+                         justify-content-center nav_main_menu1 pb-3"
+                        style={{ backgroundColor: "transparent !important" }} 
+                        >  
                             <div>
                                 <button
                                     type="button"
@@ -35,9 +37,9 @@ const Header = () => {
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
 
-                                <div className="collapse navbar-collapse menu_flex  " id="navbarCollapse">
+                                <div className="collapse navbar-collapse menu_flex" id="navbarCollapse">
                                     <div className="navbar-nav  ">
-                                        <ul className="mt-4 nav_ul t " >
+                                        <ul className="mt-4 nav_ul" >
                                             <li>
                                                 <Link href="/">
                                                     <a className="text-success"><b>HOME</b></a>
