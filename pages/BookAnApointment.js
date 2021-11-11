@@ -29,7 +29,8 @@ const BookAnApointment = () => {
                             &#160;&#160;&#160;
                             5pm to 8 pm <br /><br />
                         </div>
-                        <div className="col-lg-3"></div>
+                        <div className="col-lg-3 mt-4">
+                        <h5 style={{ color: "#983d00" }}>Registration number : 57393</h5></div>
                         <div className="row">
                             <div className="col-lg-3">
 
