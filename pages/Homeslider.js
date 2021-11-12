@@ -10,7 +10,7 @@ const Homeslider = () => {
 
     ];
     return (
-        <div className="container-fluid">
+        <div className="container-fluid bg_color_home2">
             <div className="row slider_img_home">
                 <div className="p-0 col-lg-12">
                     <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}  >
@@ -30,9 +30,10 @@ const Homeslider = () => {
                                                  style={{fontFamily:"curveFont"}}> 
                                                  About ayurveda</h1>
                                                 <p className=" mt-4   "   >
+                                                    <b>
                                                 Ayurveda is a comprehensive system of holistic<br/>
                                                  health care that originated in India several 
-                                                 thousand years ago.</p>
+                                                 thousand years ago.</b></p>
                                                 {/* <button>BOOK AN APPOINTMENT</button> */}
                                             </div>
                                         </div>

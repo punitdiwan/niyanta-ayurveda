@@ -6,8 +6,7 @@ import SimpleReactLightbox from "simple-react-lightbox";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <SimpleReactLightbox>
-      <title>Demo-15</title>
+    <SimpleReactLightbox> 
       <Component {...pageProps} />
     </SimpleReactLightbox>
   );

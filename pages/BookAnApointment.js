@@ -8,8 +8,7 @@ const BookAnApointment = () => {
     return (
         <Layout>
             <div className="container-fluid bg_color_home1">
-                <div className="container">
-
+                <div className="container"> 
                     <div className="row ">
                         <div className="col-lg-3"></div>
                         <div className="col-sm-6">

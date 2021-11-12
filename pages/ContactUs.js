@@ -19,8 +19,25 @@ const ContactUs = () => {
                             <strong>Email&#160;: </strong>dr.sanjay.yadav20@gmail.com<br />
                             <strong>Tel :</strong> +91-9425377397, +91-9039113916
                             <br /><br />
-                        <img src="/images/qr_insta.jpeg" style={{width:"80%",height:"250px"}} />
-                        
+                            <div className="row">
+                                <div className="col-sm-12  upi_scanner">
+                                    <img src="/images/upiscanner.jpeg" className="upi_scanner1"   />
+
+                                    <div className="upi_id mt-3">
+                                        <p className="text-light p-4">
+                                            <b>
+                                            UPI ID : sanjayyadav13723@ibl
+                                            </b>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
                         </div>
 
 
@@ -35,7 +52,7 @@ const ContactUs = () => {
                                     <label for="fname"> Name</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
                                 </div>
                             </div>
                             <div class="row">
@@ -43,7 +60,7 @@ const ContactUs = () => {
                                     <label for="lname"> Email</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="lname" name="lastname" placeholder="Your Email.."/>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your Email.." />
                                 </div>
                             </div>
                             <div class="row">
@@ -51,24 +68,24 @@ const ContactUs = () => {
                                     <label for="lname"> Phone</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="lname" name="lastname" placeholder="Your Phone.."/>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your Phone.." />
                                 </div>
                             </div>
-                           
+
                             <div class="row">
                                 <div class="col-25">
                                     <label for="subject">Subject</label>
                                 </div>
                                 <div class="col-75">
                                     <textarea id="subject" name="subject" placeholder="Write something.."
-                                     style={{height:"100px"}}/>
+                                        style={{ height: "100px" }} />
                                 </div>
                             </div>
-                            <br/>
-                            <div class ="row">
-                            <input type ="submit" value="Submit"/>
+                            <br />
+                            <div class="row">
+                                <input type="submit" value="Submit" />
                             </div>
-                         
+
                         </div>
 
                         <div className="col-sm-12">

@@ -1,15 +1,15 @@
 import Link from "next/link"
 const Footer = () => {
     return (
-        <div className="container_fluid" style={{ background: "#198754" }}>
+        <div className="container_fluid footer_bg_clr">
             <div className="container">
-                <div className="row">
+                <div className="row pb-2">
                     <div className="col-sm-6 mt-3 text-light"  >
                         <h3 style={{ color: "black", fontFamily: "fantasy" }}>
                             <b> Links </b>
                         </h3>
                         <div className="row">
-                            <div className="col-sm-3">
+                            <div className="col-sm-3 col-4">
                                 <ul>
                                     <li>
                                         <Link href="/">
@@ -39,7 +39,7 @@ const Footer = () => {
                                 </ul>
                             </div>
 
-                            <div className="col-sm-6">
+                            <div className="col-sm-6 col-7">
                                 <ul>
 
                                     <li>
@@ -70,8 +70,8 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="row mb-4 ">
-                            <div className="col-sm-2">
+                        <div className="row pt-2 pb-2 ">
+                            <div className="col-sm-2 col-4 text-center">
                                 <Link href="https://www.facebook.com/Yadav.sanjay473">
                                     <a target="_blank">
                                         <img src="/images/fb.png " style={{ width: "35px", height: "35px" }} />
@@ -79,14 +79,14 @@ const Footer = () => {
                                 </Link>
 
                             </div>
-                            <div className="col-sm-2">
+                            <div className="col-sm-2 col-4 text-center">
                                 <Link href="/">
                                     <a target="_blank">
                                         <img src="/images/insta.png " style={{ width: "35px", height: "35px" }} />
                                     </a>
                                 </Link>
                             </div>
-                            <div className="col-sm-2">
+                            <div className="col-sm-2 col-4 text-center">
                                 <Link href="https://youtu.be/SqQ4ryagmyc">
                                     <a target="_blank">
                                         <img src="/images/yutb.png " style={{ width: "35px", height: "35px" }} />

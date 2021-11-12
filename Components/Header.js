@@ -16,14 +16,14 @@ const Header = () => {
                     style={{ textAlign: "center" }}>
                     <Link href="#">
                         <a>
-                            <img src="/images/logo4.jpeg" style={{ width: "70%", height: "80%" }} />
+                            <img src="/images/logo4.png" style={{ width: "70%", height: "80%" }} />
 
                         </a>
                     </Link>
                 </div>
                 <div className="pt-1 col-lg-9 col-md-12 col-sm-4 col-12 nav_main_menu ">
                     <div className="bg-dark nav_main_menu0"> 
-                        <nav className=" navbar navbar-expand-md navbar-light bg-light
+                        <nav className=" navbar navbar-expand-md navbar-light  
                          justify-content-center nav_main_menu1 pb-3"
                         style={{ backgroundColor: "transparent !important" }} 
                         >  
@@ -39,7 +39,7 @@ const Header = () => {
 
                                 <div className="collapse navbar-collapse menu_flex" id="navbarCollapse">
                                     <div className="navbar-nav  ">
-                                        <ul className="mt-4 nav_ul" >
+                                        <ul className="nav_ul" >
                                             <li>
                                                 <Link href="/">
                                                     <a className="text-success"><b>HOME</b></a>

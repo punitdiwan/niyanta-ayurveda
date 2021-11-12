@@ -19,7 +19,7 @@ const Gallery = () => {
 
     return (
         <Layout>
-            <div className="p-0 mt-2 container-fluid ">
+            <div className="p-0   container-fluid gallery_top">
                 <div style={{ color: "white", backgroundColor: "black" }}>
                     <center className="p-2">  <h2><b>GALLERY </b></h2>
                          

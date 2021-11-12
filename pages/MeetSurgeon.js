@@ -6,7 +6,7 @@ import Image from 'next/image'
 const MeetSurgeon = () => {
     return (
         <Layout>
-            <div className="container_fluid">
+            <div className="container_fluid bg_color_home2">
                 <div className="row bg_MeetSurgeon_img">
                 </div>
                 <div className="pt-4 pb-5 row" style={{ width: "100%" }}>
