@@ -1,7 +1,8 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Layout from '../Components/Layout';
-import Homeslider from './Homeslider'; 
+import Homeslider from './Homeslider';
 import HomeSkinCare from './HomeSkinCare'; 
+ import HomeWlcmVedios from "./HomeWlcmVedios";
 
 export default function Home() {
 
@@ -15,7 +16,8 @@ export default function Home() {
             />
             <Layout>
                 <Homeslider />
-                <HomeSkinCare /> 
+                <HomeSkinCare />
+               <HomeWlcmVedios/>
             </Layout>
         </div>
 

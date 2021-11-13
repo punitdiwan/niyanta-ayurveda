@@ -1,8 +1,16 @@
-
-
 import Link from 'next/link'
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import useSWR from "swr"; 
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
 
 const Header = () => {
+
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/config?fields=*,logo.data.full_url`;
+    const { data, error } = useSWR(url, fetcher); 
+
+
     return (
         <div className="container-fluid">
             <div>
@@ -10,6 +18,22 @@ const Header = () => {
                 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
             </div>
+            <div className="row pt-3 pb-2 text-light" style={{ backgroundColor: "#2c642f" }}>
+                <div className="col-sm-5">
+                    <h6 className="text-center"><b>
+                        Niyanta Ayurveda Centre on the Sunshine Coast
+                    </b> </h6>
+                </div>
+                <div className="col-sm-3 text-center">
+                    <MailOutlineIcon /> {data?.data[0]?.email}
+                </div>
+                <div className="col-sm-3 text-center">
+                    <PhoneIphoneIcon /> {data?.data[0]?.phone}
+                </div>
+
+            </div>
+
+             
             {/* <div style={{float:"right"}}>Registration number-57393</div> */}
             <div className="row ">
                 <div className="  col-lg-3 col-md-8 col-sm-8 col-9 logo_img"
@@ -22,11 +46,11 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="pt-1 col-lg-9 col-md-12 col-sm-4 col-12 nav_main_menu ">
-                    <div className="bg-dark nav_main_menu0"> 
+                    <div className="bg-dark nav_main_menu0">
                         <nav className=" navbar navbar-expand-md navbar-light  
                          justify-content-center nav_main_menu1 pb-3"
-                        style={{ backgroundColor: "transparent !important" }} 
-                        >  
+                            style={{ backgroundColor: "transparent !important" }}
+                        >
                             <div>
                                 <button
                                     type="button"
@@ -133,7 +157,7 @@ const Header = () => {
                                             </li>
                                             <li>
                                                 <Link href="ContactUs">
-                                                    <a className="text-success"><b>CONTACTS&#160;US</b></a>
+                                                    <a className="text-success"><b>CONTACT&#160;US</b></a>
 
                                                 </Link>
 

@@ -2,9 +2,13 @@ import Link from "next/link"
 import Layout from '../Components/Layout' 
 import { SRLWrapper } from "simple-react-lightbox";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import useSWR from 'swr';
 
+const fetcher = (...args) => fetch(...args).then(res => res.json());
 const Gallery = () => {
 
+    const url = (`${process.env.NEXT_PUBLIC_BASE_URL}/${process.env.NEXT_PUBLIC_SCHOOL}/items/gallery?fields=*.*.*`)
+    const { data, error } = useSWR(url, fetcher); 
     const slides = [
         { title: "/images/h1.jpeg", description: 'View Gallery' },
         { title: "/images/7.jpg ", description: 'View Gallery' },
@@ -29,11 +33,11 @@ const Gallery = () => {
                     <SRLWrapper> 
                         <div className="container"> 
                             <div className="mb-5 row">
-                                {slides.map((item, i) => {
+                                {data?.data.map((item, i) => {
                                     return (
                                         <div key={i} className="col-lg-3" >
                                             <img
-                                                src={item?.title}
+                                                src={item?.photo?.data?.full_url}
                                                 className="mt-3 imght "
                                                 style={{ height: "200px", width: "100%" }}
                                             />

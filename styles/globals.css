@@ -107,7 +107,7 @@ a:hover {
   /* font-size: 39px !important; */
   /* height: 100px; */
 }
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+@media only screen and (min-width: 1000px) and (max-width: 1800px) {
   .legend h1 {
     margin-top: -280px !important;
     font-weight: 400;
@@ -278,7 +278,7 @@ a:hover {
   padding-left: 4px;
 }
 
-@media only screen and (min-width: 779px) and (max-width: 1400px) {
+@media only screen and (min-width: 779px) and (max-width: 1800px) {
   .slider_img_home {
     margin-top: -30px !important;
   }
@@ -383,6 +383,12 @@ background-color: #2c642f;
 .gallery_top{
   margin-top: -30px;
 }
+.videso_style{
+  opacity:1;-webkit-animation-delay:2.2s;
+                    -webkit-animation-duration:2s;-webkit-animation-iteration-count:1;
+                     -moz-animation-delay:2.2s;-moz-animation-duration:2s;-moz-animation-iteration-count:1; 
+                     animation-delay:2.2s;animation-duration:2s;animation-iteration-count:1; 
+}
 
 .bg_color_home1 {
   background-image: url(../public/images/apmtbg.jpeg)  ;
@@ -400,6 +406,18 @@ background-color: #2c642f;
   background-image: url(../public/images/bg1.jpeg)  ;
   background-size: cover;
   background-repeat: repeat;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  margin-top:-25px;
+  padding-top: 20px;
+  /* background: url(../public/images/scrl.jpg) ; */
+    
+}
+.bg_color_home21 {
+  background-image: url(../public/images/wlcmvideso.jpg)  ;
+  
+   
   background-position: center top;
   height: 100%;
   width: 100%;
@@ -500,7 +518,7 @@ color:#425cbb
 .text_hover1:hover{
   color:#4dc2cc
 }
-@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+@media only screen and (min-width: 1024px) and (max-width: 1800px) {
   .imgrespnsive {
     width: 150%;
     margin-left: -300px;
@@ -548,7 +566,14 @@ color:#425cbb
 }
 
 
-input[type=text], select, textarea {
+input[type=text], select, textarea  {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email]{
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
